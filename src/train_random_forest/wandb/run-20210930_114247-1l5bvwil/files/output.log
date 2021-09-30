@@ -1,0 +1,18 @@
+2021-09-30 11:42:49,952 Minimum price: 10, Maximum price: 350
+2021-09-30 11:42:49,976 Preparing sklearn pipeline
+2021-09-30 11:42:49,977 Fitting
+2021-09-30 11:47:25,985 Scoring
+Traceback (most recent call last):
+  File "run.py", line 312, in <module>
+    go(args)
+  File "run.py", line 85, in go
+    r_squared = sk_pipe.score(X_val, y_val)
+  File "/home/guillermo/.local/lib/python3.8/site-packages/sklearn/utils/metaestimators.py", line 120, in <lambda>
+    out = lambda *args, **kwargs: self.fn(obj, *args, **kwargs)
+  File "/home/guillermo/.local/lib/python3.8/site-packages/sklearn/pipeline.py", line 618, in score
+    Xt = transform.transform(Xt)
+  File "/home/guillermo/.local/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 556, in transform
+    self._check_n_features(X, reset=False)
+  File "/home/guillermo/.local/lib/python3.8/site-packages/sklearn/base.py", line 365, in _check_n_features
+    raise ValueError(
+ValueError: X has 15 features, but ColumnTransformer is expecting 11 features as input.

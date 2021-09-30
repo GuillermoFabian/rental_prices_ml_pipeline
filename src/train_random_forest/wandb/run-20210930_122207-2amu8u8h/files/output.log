@@ -1,0 +1,17 @@
+2021-09-30 12:22:10,076 Minimum price: 10, Maximum price: 350
+2021-09-30 12:22:10,090 Preparing sklearn pipeline
+2021-09-30 12:22:10,091 Fitting
+2021-09-30 12:26:37,044 Scoring
+2021-09-30 12:26:37,157 Score: 0.5699986230421765
+2021-09-30 12:26:37,157 MAE: 32.7352091554854
+2021-09-30 12:26:37,157 Exporting model
+/home/guillermo/.local/lib/python3.8/site-packages/mlflow/models/signature.py:129: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  inputs = _infer_schema(model_input)
+Traceback (most recent call last):
+  File "run.py", line 314, in <module>
+    go(args)
+  File "run.py", line 130, in go
+    artifact.add_dir(export_path)
+  File "/home/guillermo/miniconda3/envs/mlflow-cd3b4f52f7dead4ede9554d420a1b9da8d8db1e3/lib/python3.8/site-packages/wandb/sdk/wandb_artifacts.py", line 331, in add_dir
+    raise ValueError("Path is not a directory: %s" % local_path)
+ValueError: Path is not a directory: /tmp/tmpi8g75qfu/random_forest_dir

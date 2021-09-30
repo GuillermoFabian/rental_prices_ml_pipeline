@@ -1,0 +1,19 @@
+{
+    "os": "Linux-5.11.0-36-generic-x86_64-with-glibc2.31",
+    "python": "3.9.7",
+    "heartbeatAt": "2021-09-28T18:47:39.778147",
+    "startedAt": "2021-09-28T18:47:38.531947",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/home/guillermo/.local/share/jupyter/runtime/kernel-6743bb15-25f1-46d0-9b3f-7f53a2c08d28.json"
+    ],
+    "state": "running",
+    "program": "EDA.ipynb",
+    "root": "/home/guillermo/gfigueroa/Workspace/ml_engineer/Project_2/src/eda",
+    "host": "guillermo-Inspiron-5502",
+    "username": "guillermo",
+    "executable": "/home/guillermo/miniconda3/envs/mlflow-8af91d08d13566aada991fdb38ca18c4510876b2/bin/python"
+}

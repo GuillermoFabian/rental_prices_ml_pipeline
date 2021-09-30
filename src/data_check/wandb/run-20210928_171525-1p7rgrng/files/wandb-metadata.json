@@ -1,0 +1,28 @@
+{
+    "os": "Linux-5.11.0-36-generic-x86_64-with-glibc2.31",
+    "python": "3.9.7",
+    "heartbeatAt": "2021-09-28T20:15:27.257145",
+    "startedAt": "2021-09-28T20:15:25.922859",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        ".",
+        "-vv",
+        "--csv",
+        "preprocessed_data.csv:latest",
+        "--ref",
+        "preprocessed_data.csv:reference",
+        "--kl_threshold",
+        "0.2",
+        "--min_price",
+        "10",
+        "--max_price",
+        "350"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "host": "guillermo-Inspiron-5502",
+    "username": "guillermo",
+    "executable": "/home/guillermo/miniconda3/envs/mlflow-d1fd4b13aac386abe6aa5a2ada1ca11214902ce4/bin/python"
+}
