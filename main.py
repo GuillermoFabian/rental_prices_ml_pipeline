@@ -111,21 +111,20 @@ def go(config: DictConfig):
                     "max_tfidf_features":   config["modeling"]["max_tfidf_features"],
                     "output_artifact": "random_forest_export"
 
-
-
-
-
                 },
             )
 
 
         if "test_regression_model" in active_steps:
+            _ = mlflow.run(
+                f"{config['main']['components_repository']}/test_regression_model",
+                "main",
+                parameters={
+                    "mlflow_model": f"{config['random_forest_pipeline']['export_artifact']}:prod",
+                    "test_dataset": "test_data.csv:latest"
 
-            ##################
-            # Implement here #
-            ##################
-
-            pass
+                },
+            )
 
 
 if __name__ == "__main__":

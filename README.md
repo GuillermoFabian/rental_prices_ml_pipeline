@@ -30,7 +30,7 @@ modeling -> random_forest -> n_estimators to 10 and etl->min_price to 50:
   -P hydra_options="modeling.random_forest.n_estimators=10 etl.min_price=50"
 ```
 
-#### Initial hyperparameters were setted in ``config.yaml``
+#### Initial hyperparameters were set in ``config.yaml``
 
 
 

@@ -1,0 +1,25 @@
+2021-09-30 14:14:26,845 Minimum price: 10, Maximum price: 350
+2021-09-30 14:14:26,859 Preparing sklearn pipeline
+2021-09-30 14:14:26,859 Fitting
+Traceback (most recent call last):
+  File "run.py", line 311, in <module>
+    go(args)
+  File "run.py", line 80, in go
+    sk_pipe.fit(X_train, y_train)
+  File "/home/guillermo/.local/lib/python3.8/site-packages/sklearn/pipeline.py", line 346, in fit
+    self._final_estimator.fit(Xt, y, **fit_params_last_step)
+  File "/home/guillermo/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 387, in fit
+    trees = Parallel(n_jobs=self.n_jobs, verbose=self.verbose,
+  File "/home/guillermo/.local/lib/python3.8/site-packages/joblib/parallel.py", line 1054, in __call__
+    self.retrieve()
+  File "/home/guillermo/.local/lib/python3.8/site-packages/joblib/parallel.py", line 933, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/home/guillermo/miniconda3/envs/mlflow-cd3b4f52f7dead4ede9554d420a1b9da8d8db1e3/lib/python3.8/multiprocessing/pool.py", line 765, in get
+    self.wait(timeout)
+  File "/home/guillermo/miniconda3/envs/mlflow-cd3b4f52f7dead4ede9554d420a1b9da8d8db1e3/lib/python3.8/multiprocessing/pool.py", line 762, in wait
+    self._event.wait(timeout)
+  File "/home/guillermo/miniconda3/envs/mlflow-cd3b4f52f7dead4ede9554d420a1b9da8d8db1e3/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/guillermo/miniconda3/envs/mlflow-cd3b4f52f7dead4ede9554d420a1b9da8d8db1e3/lib/python3.8/threading.py", line 302, in wait
+    waiter.acquire()
+KeyboardInterrupt

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/guillermo/gfigueroa/Workspace/ml_engineer/Project_2/mlruns/0/04756465315b49c69eb1531681cb992a/artifacts
+end_time: 1633024856485
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 04756465315b49c69eb1531681cb992a
+run_uuid: 04756465315b49c69eb1531681cb992a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1633024316114
+status: 3
+tags: []
+user_id: guillermo

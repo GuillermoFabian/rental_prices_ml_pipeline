@@ -20,4 +20,4 @@ signature:
     "type": "double"}, {"name": "latitude", "type": "double"}, {"name": "last_review",
     "type": "string"}, {"name": "name", "type": "string"}]'
   outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
-utc_time_created: '2021-09-30 15:57:49.853627'
+utc_time_created: '2021-09-30 20:50:57.546177'
