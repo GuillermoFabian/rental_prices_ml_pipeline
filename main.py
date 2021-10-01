@@ -120,7 +120,7 @@ def go(config: DictConfig):
                 f"{config['main']['components_repository']}/test_regression_model",
                 "main",
                 parameters={
-                    "mlflow_model": f"{config['random_forest_pipeline']['export_artifact']}:prod",
+                    "mlflow_model": "random_forest_export:prod",
                     "test_dataset": "test_data.csv:latest"
 
                 },
