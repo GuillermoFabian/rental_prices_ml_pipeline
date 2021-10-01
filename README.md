@@ -32,5 +32,9 @@ modeling -> random_forest -> n_estimators to 10 and etl->min_price to 50:
 
 #### Initial hyperparameters were set in ``config.yaml``
 
+##### Access to runs information in W&B : https://wandb.ai/gfigueroa
+
+
+
 
 
