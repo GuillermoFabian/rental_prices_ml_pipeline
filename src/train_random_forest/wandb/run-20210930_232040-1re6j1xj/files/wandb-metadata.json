@@ -1,0 +1,37 @@
+{
+    "os": "Linux-5.11.0-37-generic-x86_64-with-glibc2.10",
+    "python": "3.8.12",
+    "heartbeatAt": "2021-10-01T02:20:41.806002",
+    "startedAt": "2021-10-01T02:20:40.893056",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--trainval_artifact",
+        "clean_sample.csv:latest",
+        "--val_size",
+        "0.2",
+        "--random_seed",
+        "42",
+        "--stratify_by",
+        "neighbourhood_group",
+        "--rf_config",
+        "/home/guillermo/gfigueroa/Workspace/ml_engineer/Project_2/multirun/2021-09-30/22-28-54/10/rf_config.json",
+        "--max_tfidf_features",
+        "30",
+        "--output_artifact",
+        "random_forest_export"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "src/train_random_forest/run.py",
+    "git": {
+        "remote": "https://github.com/GuillermoFabian/rental_prices_ml_pipeline.git",
+        "commit": "12cb0da52f5070f3914e485770bd9a2ef4e768a3"
+    },
+    "email": "gfigueroa@ignetworks.com",
+    "root": "/home/guillermo/gfigueroa/Workspace/ml_engineer/Project_2",
+    "host": "guillermo-Inspiron-5502",
+    "username": "guillermo",
+    "executable": "/home/guillermo/miniconda3/envs/mlflow-baaae7b99982e9af6a16460e4ff96fd763020045/bin/python"
+}
